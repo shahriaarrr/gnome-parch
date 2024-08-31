@@ -14,7 +14,7 @@ options=(!strip !emptydirs)
 install=gnome-parch.install
 source=("rootfs.zip")
 sha256sums=('SKIP')
-deps=("gnome-shell" "papirus-icon-theme"  "parch-gnome-backgrounds" "orchis-theme")
+deps=("gnome-shell" "papirus-icon-theme"  "parch-gnome-backgrounds" "orchis-theme" "qadwaitadecorations-qt5" "qadwaitadecorations-qt6" "qt5-wayland-decorations" "gnome-shell-extension-blur-my-shell" "gnome-shell-extension-vitals" "gnome-shell-extension-ubuntu-dock" "gnome-shell-extension-appindicator")
 package() {
 	install -dm755 ${pkgdir}${_destname1}
 	cp -r ${srcdir}${_destname1}/* ${pkgdir}${_destname1}
